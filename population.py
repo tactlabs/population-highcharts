@@ -2,7 +2,7 @@ import pandas as pd
 
 def get_data():
     
-    df = pd.read_csv('/home/akshara/Documents/Intern/population-highchart/data.csv')
+    df = pd.read_csv('data.csv')
 
     
     region = df['region'].tolist()
@@ -28,7 +28,7 @@ def get_data():
 
 def add_row(region,population):
 
-    df = pd.read_csv('/home/akshara/Documents/Intern/population-highchart/data.csv') 
+    df = pd.read_csv('data.csv') 
 
     new_row = {
     
@@ -43,7 +43,7 @@ def add_row(region,population):
 
     print(df)
 
-    df.to_csv('/home/akshara/Documents/Intern/population-highchart/data.csv')
+    df.to_csv('data.csv')
 
 if __name__ == "__main__":
     get_data()
